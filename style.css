@@ -1,0 +1,103 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #7d7f99;
+  /* Below are two interesting properties I learned to bolster my project:
+     The first allows the web page to remain a static screen, without scrolling
+     The second stops the user from selecting the images on the screen, so it looks
+     and feels more like a game. */
+  overflow: hidden;
+  user-select: none;
+}
+
+#left-container {
+  left: 0px;
+}
+
+#right-container {
+  right: 0px;
+}
+
+.container {
+  width: 15%;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+}
+
+/* Left side of page */
+.menu-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  left: -50px;
+}
+
+.menu {
+  margin: 20px;
+  max-width: 50%;
+  max-height: 50%;
+  z-index: 5;
+}
+
+/* Right side of page (removed for the time being, will be reincorporated when 
+level completion functionality is implemented) */
+.star-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  right: -30px;
+  bottom: 4%;
+}
+
+.star {
+  margin: 50px;
+  max-width: 50%;
+  max-height: 50%;
+  z-index: 5;
+}
+
+/* Pencil styling, replaces the plants */
+.pencil {
+    max-height: 650px;
+    position: absolute;
+    top: 5%;
+    rotate: 5deg;
+    z-index: 2;
+}
+
+#pencil-blue, #position1 {
+    left: 15%;
+}
+
+#pencil-green, #position2 {
+    left: 30%;
+}
+
+#pencil-pink, #position3 {
+    left: 45%;
+}
+
+#pencil-red, #position4 {
+    left: 60%;
+}
+
+#pencil-yellow, #position5 {
+    left: 75%;
+}
+
+/* Target positions for pencils */
+.position {
+  background-color: #9395ae;
+  width: 5%;
+  min-width: 35px;
+  height: 95%;
+  position: absolute;
+  top: 2%;
+}
