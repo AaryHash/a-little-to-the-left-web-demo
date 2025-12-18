@@ -40,27 +40,27 @@ function elementDrag(e) {
     target5CenterX = target5.left + target5.width / 2;
     target5CenterY = target5.top + target5.height / 2;
 
-    if (Math.abs(pos3 - target1CenterX) <= 50 && Math.abs(pos4 - target1CenterY) <= 50) {
+    if (Math.abs(pos3 - target1CenterX) <= 50 && Math.abs(pos4 - target1CenterY) <= 100) {
         pencilElement.style.rotate = '0deg';
         pencilElement.style.top = (target1.top + target1.height / 2 - pencil.height / 2) + 'px';
         pencilElement.style.left = (target1.left + target1.width / 2 - pencil.width / 2) + 'px';
     }
-    else if (Math.abs(pos3 - target2CenterX) <= 50 && Math.abs(pos4 - target2CenterY) <= 50) {
+    else if (Math.abs(pos3 - target2CenterX) <= 50 && Math.abs(pos4 - target2CenterY) <= 100) {
         pencilElement.style.rotate = '0deg';
         pencilElement.style.top = (target2.top + target2.height / 2 - pencil.height / 2) + 'px';
         pencilElement.style.left = (target2.left + target2.width / 2 - pencil.width / 2) + 'px';
     }
-    else if (Math.abs(pos3 - target3CenterX) <= 50 && Math.abs(pos4 - target3CenterY) <= 50) {
+    else if (Math.abs(pos3 - target3CenterX) <= 50 && Math.abs(pos4 - target3CenterY) <= 100) {
         pencilElement.style.rotate = '0deg';
         pencilElement.style.top = (target3.top + target3.height / 2 - pencil.height / 2) + 'px';
         pencilElement.style.left = (target3.left + target3.width / 2 - pencil.width / 2) + 'px';
     }
-    else if (Math.abs(pos3 - target4CenterX) <= 50 && Math.abs(pos4 - target4CenterY) <= 50) {
+    else if (Math.abs(pos3 - target4CenterX) <= 50 && Math.abs(pos4 - target4CenterY) <= 100) {
         pencilElement.style.rotate = '0deg';
         pencilElement.style.top = (target4.top + target4.height / 2 - pencil.height / 2) + 'px';
         pencilElement.style.left = (target4.left + target4.width / 2 - pencil.width / 2) + 'px';
     }
-    else if (Math.abs(pos3 - target5CenterX) <= 50 && Math.abs(pos4 - target5CenterY) <= 50) {
+    else if (Math.abs(pos3 - target5CenterX) <= 50 && Math.abs(pos4 - target5CenterY) <= 100) {
         pencilElement.style.rotate = '0deg';
         pencilElement.style.top = (target5.top + target5.height / 2 - pencil.height / 2) + 'px';
         pencilElement.style.left = (target5.left + target5.width / 2 - pencil.width / 2) + 'px';
